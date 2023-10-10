@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 150px;
+    align-items: baseline;
+    color: #ffffff;
+    background-color: rgb(2, 2, 32);
+}
+
+.navbar .nav-logo{
+    font-weight: bold;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 0 20px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #ffffff;
+}

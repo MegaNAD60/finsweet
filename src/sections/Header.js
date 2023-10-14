@@ -1,4 +1,6 @@
 import Button from "../components/Button";
+import { FaArrowRight } from 'react-icons/fa';
+
 
 
 function Header() {
@@ -9,7 +11,7 @@ function Header() {
                 gridTemplateColumns: 'repeat(2, 1fr)',
                 padding: '50px 150px',
                 color: '#ffffff',
-                backgroundColor: 'rgb(2, 2, 32)',}}>
+                backgroundColor: '#1C1E53',}}>
             <div>
                 <h1>Building stellar<br />websites for early<br />startups</h1>
                 <p>
@@ -22,7 +24,7 @@ function Header() {
                  backgroundColor='yellow'
                  border='1px solid yellow'
                 />
-                <span style={{marginLeft:'30px'}}>View Pricing</span>
+                <span style={{marginLeft:'30px', alignItems: 'baseline'}}>View Pricing<FaArrowRight style={{marginLeft:'20px'}} /></span>
             </div>
             <img src={require('../images/Illustration.png')} alt="graphic" />
           </div>

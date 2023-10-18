@@ -46,7 +46,8 @@ function Clients(){
         <div style={{
             display: "grid",
             gridTemplateColumns: 'repeat(2, 1fr)',
-            padding: '50px 150px'
+            padding: '50px 150px',
+            backgroundColor: '#D9D9D9'
         }}>
             <div>
                 <h2>What our clients say about us</h2>

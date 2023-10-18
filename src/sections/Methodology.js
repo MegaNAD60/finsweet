@@ -21,7 +21,7 @@ function Methodology(){
              style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(2, 1fr)',
-                backgroundColor: 'lightblue',
+                backgroundColor: '#D9D9D9',
                 padding: '50px 150px'
              }}>
                 <div>

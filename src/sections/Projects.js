@@ -17,7 +17,7 @@ function Projects(){
                         backgroundColor: 'blue',
                         top: '0px',
                         width: '50%',
-                        height: '70vh',
+                        height: '75vh',
                     }}>
                         <div style={{
                             color: '#ffffff',

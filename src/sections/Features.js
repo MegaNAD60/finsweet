@@ -5,7 +5,10 @@ function Features(){
     const featureContents = FeatureContents.map(contents => {
         const {id, image, title, description} = contents;
         return(
-            <div key={id}>
+            <div key={id} style={{
+                backgroundColor: '#ffffff',
+                padding: '10px',
+            }}>
                 <img src={image} alt="" />
                 <h3>{title}</h3>
                 <p>{description}</p>
@@ -15,7 +18,8 @@ function Features(){
 
     return(
         <div style={{
-            padding: '50px 150px'
+            padding: '50px 150px',
+            backgroundColor: '#D9D9D9'
         }}>
             <div style={{
                 textAlign: 'center',

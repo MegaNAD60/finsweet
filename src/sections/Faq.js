@@ -3,48 +3,34 @@ import { Faqs } from "../cards/Cards";
 import { Link } from 'react-router-dom'
 import { FaPlus } from "react-icons/fa";
 
+const ToggleAnswer = ({id, num, question, answer}) => {
+
+    const [expanded, setExpanded] = useState(false);
+
+    return(
+        <div key={id}>
+            <div onClick={() => setExpanded(!expanded)}>
+                <h3>
+                    <span style={{color: 'purple'}}>
+                        {num}
+                    </span>
+                    <span style={{marginLeft: '20px'}}>
+                        {question}
+                    </span>
+                    <span>
+                        <FaPlus style={{float: 'right'}} />
+                    </span>
+                </h3>
+            </div>
+            {expanded && <p>{answer}</p>}<hr />
+        </div>
+
+        )
+
+    }
+
 
 function Faq(){
-
-    const [expanded, setExpanded] = useState(false)
-
-    const toggleAnswer = id => () => {
-        setExpanded(expanded => ({
-            ...expanded,
-            [id]: !expanded[id]
-        }));
-    };
-
-    const faqs = Faqs.map(contents => {
-        const{id, num, question, answer} = contents;
-        return(
-            <div key={id}>
-                <div onClick={toggleAnswer}>
-                    <h3>
-                        <span style={{
-                            color: 'purple'
-                        }}>
-                            {num}
-                        </span>
-                        <span style={{
-                            marginLeft: '20px',
-                        }}>
-                            {question}
-                        </span>
-                        <span>
-                            <FaPlus style={{float: 'right'}} />
-                        </span>
-                    </h3>
-                </div>
-                <div style={{
-                    display: expanded[id] ? 'block' : 'none'
-                }}>
-                    <p>{answer}</p>
-                </div><hr />
-            </div>
-        )
-    })
-
 
     return(
         <div style={{
@@ -59,7 +45,9 @@ function Faq(){
 
             <div>
                 {/*question*/}
-                {faqs}
+                {Faqs.map(faq => {
+                    return <ToggleAnswer key={faq.id} num={faq.num} question={faq.question} answer={faq.answer} />
+                })}
             </div>
         </div>
     )

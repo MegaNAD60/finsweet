@@ -1,14 +1,10 @@
 function Input(props){
     return(
        <>
-            <input
+            <input className="w-full p-2"
              name={props.name}
              id={props.id}
              placeholder={props.placeholder}
-             style={{
-                padding: '10px',
-                width: '100%'
-             }}
             ></input>
        </>
     )

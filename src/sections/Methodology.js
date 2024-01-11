@@ -1,14 +1,15 @@
 import { Methods } from "../cards/Cards";
 import { Link } from 'react-router-dom';
+import { FaArrowRight } from "react-icons/fa";
 
 function Methodology(){
 
     const methodContents = Methods.map(contents => {
         const {id, image, title, description} = contents;
         return(
-            <div key={ id } >
+            <div key={id} className="m-2" >
                 <img src={image} alt="" />
-                <h3>{title}</h3>
+                <h3 className="text-2xl font-medium">{title}</h3>
                 <p>{description}</p>
             </div>
         )
@@ -16,24 +17,21 @@ function Methodology(){
     )
 
     return(
-        <>
-            <div
-             style={{
-                display: 'grid',
-                gridTemplateColumns: 'repeat(2, 1fr)',
-                backgroundColor: '#D9D9D9',
-                padding: '50px 150px'
-             }}>
-                <div>
-                    <h2>How we work</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur<br /> adipiscing elit, sed do eiusmod tempor.</p>
-                    <p><Link to='/contact'>Get in touch with us</Link></p>
+        <div className="">
+            <div className="max-w-[1240px] w-full mx-auto py-16 px-4 md:grid md:grid-cols-3 gap-10">
+                <div className="w-full my-6 text-center md:text-left">
+                    <h2 className="text-[2rem] font-medium">How we work</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <Link className="flex gap-3 text-[#3146a0]" to='/contact'>
+                        <p className="font-medium">Get in touch with us</p>
+                        <span className="mt-1"><FaArrowRight /></span>
+                    </Link>
                 </div>
-                <div style={{display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)'}}>
+                <div className="col-span-2 grid grid-cols-2">
                     {methodContents}
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

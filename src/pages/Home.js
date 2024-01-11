@@ -19,7 +19,7 @@ function Home() {
         <section><Faq /></section>
         <section><Inquiry /></section>
         <section><Blogs /></section>
-        <section><Footer /></section>
+       <section><Footer /></section>
       </>
     );
   }

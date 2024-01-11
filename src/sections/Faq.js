@@ -9,18 +9,18 @@ const ToggleAnswer = ({id, num, question, answer}) => {
 
     return(
         <div key={id}>
-            <div onClick={() => setExpanded(!expanded)}>
+            <div className="flex justify-between py-4" onClick={() => setExpanded(!expanded)}>
                 <h3>
-                    <span style={{color: 'purple'}}>
+                    <span className="text-[purple]">
                         {num}
                     </span>
-                    <span style={{marginLeft: '20px'}}>
+                    <span className="ml-2">
                         {question}
                     </span>
-                    <span>
-                        <FaPlus style={{float: 'right'}} />
-                    </span>
                 </h3>
+                <span>
+                    <FaPlus />
+                </span>
             </div>
             {expanded && <p>{answer}</p>}<hr />
         </div>
@@ -33,21 +33,19 @@ const ToggleAnswer = ({id, num, question, answer}) => {
 function Faq(){
 
     return(
-        <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
-            padding: '50px 150px'
-        }}>
-            <div>
-                <h2>Frequently asked questions</h2>
-                <Link to='/contact'>Contant us for more info</Link>
-            </div>
+        <div className="bg-white py-16">
+            <div className="max-w-[1240px] md:grid md:grid-cols-3 mx-auto px-6">
+                <div className="text-center md:text-left mb-4 md:mb-0">
+                    <h2 className="font-medium text-2xl">Frequently asked questions</h2>
+                    <p className="text-blue-600"><Link to='/contact'>Contant us for more info</Link></p>
+                </div>
 
-            <div>
-                {/*question*/}
-                {Faqs.map(faq => {
-                    return <ToggleAnswer key={faq.id} num={faq.num} question={faq.question} answer={faq.answer} />
-                })}
+                <div className="col-span-2">
+                    {/*question*/}
+                    {Faqs.map(faq => {
+                        return <ToggleAnswer key={faq.id} num={faq.num} question={faq.question} answer={faq.answer} />
+                    })}
+                </div>
             </div>
         </div>
     )

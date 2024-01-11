@@ -9,20 +9,11 @@ function Clients(){
     const renderCarousel = clientsCarousel.map(contents => {
         const {id, name, post, image, words} = contents
         return(
-            <div key={id} style={{
-                textAlign: 'left'
-            }}>
+            <div className="text-left" key={id}>
                 <h3>{words}</h3>
-                <div style={{
-                    display: 'flex',
-                    gap: '20px',
-                }}>
-                    <img src={image} alt="" style={{
-                        height: '50px',
-                        width: '50px',
-                        borderRadius: '50%'
-                    }} />
-                    <p><b>{name}</b><br />{post}</p>
+                <div className="flex">
+                    <img className="w-10 h-10 rounded-full" src={image} alt="" />
+                    <p className="pl-2"><b>{name}</b><br />{post}</p>
                 </div>
             </div>
         )
@@ -43,48 +34,36 @@ function Clients(){
     };
 
     return(
-        <div style={{
-            display: "grid",
-            gridTemplateColumns: 'repeat(2, 1fr)',
-            padding: '50px 150px',
-            backgroundColor: '#D9D9D9'
-        }}>
-            <div>
-                <h2>What our clients say about us</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
-            </div>
-            <div>
-                {/*carousel*/}
-                <Carousel
-                    showArrows={false}
-                    autoPlay={true}
-                    infiniteLoop={true}
-                    showIndicators={false}
-                    selectItem={currentIndex}
-                    showThumbs={false}
-                    className='carousel-container'
-                >
-                    {renderCarousel}
-                </Carousel>
-                <div style={{
-                    float: 'right'
-                }}>
-                    <button onClick={handlePrev} style={{
-                        padding: '5px',
-                        margin: '5px',
-                        borderRadius: '50%',
-                        backgroundColor: '#ffffff'
+        <div className="bg-[#D9D9D9]">
+            <div className="max-w-[1240px] w-full mx-auto px-6 py-10 md:grid md:grid-cols-3 gap-10">
+                <div className="w-[80%]">
+                    <h2 className="text-2xl font-medium">What our clients say about us</h2>
+                    <p className="text-sm mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.</p>
+                </div>
+                <div className="col-span-2 md:w-[80%] mt-8 md:mt-0">
+                    {/*carousel*/}
+                    <Carousel
+                        showArrows={false}
+                        autoPlay={true}
+                        infiniteLoop={true}
+                        showIndicators={false}
+                        selectItem={currentIndex}
+                        showThumbs={false}
+                        className='carousel-container'
+                    >
+                        {renderCarousel}
+                    </Carousel>
+
+                    <div style={{
+                        float: 'right'
                     }}>
-                        {<FaChevronLeft />}
-                    </button>
-                    <button onClick={handelNext} style={{
-                        padding: '5px',
-                        margin: '5px',
-                        borderRadius: '50%',
-                        backgroundColor: '#ffffff'
-                    }}>
-                        {<FaChevronRight />}
-                    </button>
+                        <button className="p-2 m-2 bg-white rounded-full" onClick={handlePrev}>
+                            {<FaChevronLeft />}
+                        </button>
+                        <button className="p-2 m-2 bg-white rounded-full" onClick={handelNext}>
+                            {<FaChevronRight />}
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

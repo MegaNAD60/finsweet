@@ -12,11 +12,11 @@ function Projects(){
 
                     <div className='relative col-span-2'>
                         <img className='' src={card} alt='' />
-                        <div className='absolute top-0 w-[50%] h-[100%] bg-gradient-to-br from-[#13153db3] to-[#13153d] text-white'>
+                        <div className='absolute top-0 w-[50%] h-[100%] bg-gradient-to-br from-[#1c1e53b3] to-[#1C1E53] text-white'>
                             <div className='mt-[50%] md:mt-[80%] p-2'>
                                 <h3 className='font-medium'>Workhub office Webflow Webflow Design</h3>
                                 <p className='py-4 text-sm'>Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam</p>
-                                <p className='text-[#e48647] font-medium'><Link>View project</Link></p>
+                                <p className='text-[#FCD980] font-medium'><Link>View project</Link></p>
                             </div>
                         </div>
                     </div>
@@ -24,10 +24,10 @@ function Projects(){
                     <div>
                         <div className='relative my-4 md:my-0'>
                             <img src={rec} alt='' />
-                            <div className='absolute bg-gradient-to-br from-[#13153db3] to-[#13153d] text-white top-0 w-full h-[100%]'>
+                            <div className='absolute bg-gradient-to-br from-[#1c1e53b3] to-[#1C1E53] text-white top-0 w-full h-[100%]'>
                                 <div className='mx-4 mt-[40%]'>
                                     <h3 className='font-medium'>Unisaas website Design</h3>
-                                    <p className='text-[#e48647] font-medium'><Link>View portfolio</Link></p>
+                                    <p className='text-[#FCD980] font-medium'><Link>View portfolio</Link></p>
                                 </div>
                             </div>
                         </div>

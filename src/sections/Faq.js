@@ -11,7 +11,7 @@ const ToggleAnswer = ({id, num, question, answer}) => {
         <div key={id}>
             <div className="flex justify-between py-4" onClick={() => setExpanded(!expanded)}>
                 <h3>
-                    <span className="text-[purple]">
+                    <span className="text-[#1C1E53]">
                         {num}
                     </span>
                     <span className="ml-2">
@@ -37,7 +37,7 @@ function Faq(){
             <div className="max-w-[1240px] md:grid md:grid-cols-3 mx-auto px-6">
                 <div className="text-center md:text-left mb-4 md:mb-0">
                     <h2 className="font-medium text-2xl">Frequently asked questions</h2>
-                    <p className="text-blue-600"><Link to='/contact'>Contant us for more info</Link></p>
+                    <p className="text-[#1C1E53]"><Link to='/contact'>Contant us for more info</Link></p>
                 </div>
 
                 <div className="col-span-2">

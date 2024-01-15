@@ -17,7 +17,7 @@ function Methodology(){
     )
 
     return(
-        <div className="">
+        <div className="bg-[#F4F6FC]">
             <div className="max-w-[1240px] w-full mx-auto py-16 px-4 md:grid md:grid-cols-3 gap-10">
                 <div className="w-full my-6 text-center md:text-left">
                     <h2 className="text-[2rem] font-medium">How we work</h2>

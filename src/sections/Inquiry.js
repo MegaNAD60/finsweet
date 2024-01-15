@@ -4,7 +4,7 @@ import write from '../images/web/woman-writing-on-paper-3228878.png'
 function Inquiry(){
     return(
         <div className='max-w-[1240px] py-16 px-6 mx-auto'>
-            <div className='md:grid md:grid-cols-2 bg-[#13153d]'>
+            <div className='md:grid md:grid-cols-2 bg-[#1C1E53]'>
 
                 <div className='relative'>
                     <img className='' src={write} alt=''/>
@@ -31,7 +31,7 @@ function Inquiry(){
                         <label htmlFor='figma'>
                             <Input name='figma' id='figma' placeholder='Paste your Figma design URL' />
                         </label><br /><br />
-                        <button className='bg-[#d8b33b] text-black font-medium py-3 w-full rounded-3xl'>Send an Inquiry</button>
+                        <button className='bg-[#FCD980] text-black font-medium py-3 w-full rounded-3xl'>Send an Inquiry</button>
                         <p className='pt-3 text-center'>Get in touch with us</p>
                     </form>
                 </div>

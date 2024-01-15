@@ -3,8 +3,8 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 function Footer(){
     return(
-        <div className="">
-            <div className="bg-[#13153d] text-white">
+        <div className="mt-10">
+            <div className="bg-[#1C1E53] text-white">
 
                 <div className="max-w-[1240px] mx-auto pt-10 px-6 md:grid md:grid-cols-2 gap-20">
 
@@ -15,7 +15,7 @@ function Footer(){
                             <p className="my-6">We are always open to discuss your project and improve your online presence.</p>
                         </div>
 
-                        <div className="py-4 px-4 text-black bg-[#d8b33b] md:grid md:grid-cols-2 md:gap-20">
+                        <div className="py-4 px-4 text-black bg-[#FCD980] md:grid md:grid-cols-2 md:gap-20">
 
                             <div>
                                 <h3 className="font-medium md:text-2xl text-xl">Email me at</h3>

@@ -14,7 +14,7 @@ function Features(){
     })
 
     return(
-        <div className="py-6">
+        <div className="py-6 bg-[#F4F6FC]">
 
             <div className="max-w-[1240px] w-full mx-auto px-6">
 

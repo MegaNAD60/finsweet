@@ -128,3 +128,51 @@ export const Faqs = [
         answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut laboore et dolore magna aliqua.'
     },
 ]
+
+export const benefitContents = [
+    {
+        id: 1,
+        image:  require('../images/features_icons/Icon_6.png'),
+        title: "Customize with ease",
+        description: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+    },
+    {
+        id: 2,
+        image:  require('../images/features_icons/Icon_3.png'),
+        title: "Perfectly Responsive",
+        description: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+    },
+    {
+        id: 3,
+        image:  require('../images/features_icons/Icon_1.png'),
+        title: "Friendly Support",
+        description: "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+    },
+]
+
+export const Teams = [
+    {
+        id: 1,
+        image: require('../images/about/man-in-black-suit-holding-a-calling-card-3785104.png'),
+        name: 'John Smith',
+        position: 'CEO'
+    },
+    {
+        id: 2,
+        image: require('../images/about/serious-man-3760373.png'),
+        name: 'Simon Adams',
+        position: 'CTO'
+    },
+    {
+        id: 3,
+        image: require('../images/about/man-in-white-shirt-wearing-blue-bucket-hat-6626874.png'),
+        name: 'Paul Jones',
+        position: 'Design Lead'
+    },
+    {
+        id: 4,
+        image: require('../images/about/model.png'),
+        name: 'Sara Hardin',
+        position: 'Project Manager'
+    },
+]

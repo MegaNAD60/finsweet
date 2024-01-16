@@ -11,7 +11,7 @@ function Footer(){
                     <div className="">
 
                        <div className="w-[80%]">
-                            <h2 className="font-medium text-3xl">finsweet</h2>
+                            <h2 className="font-medium text-3xl">{`{finsweet`}</h2>
                             <p className="my-6">We are always open to discuss your project and improve your online presence.</p>
                         </div>
 

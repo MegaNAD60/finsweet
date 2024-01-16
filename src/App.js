@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <button className={showbtn ? 'fixed bottom-3 right-3 py-2 px-2 bg-[#13153d] text-white rounded-md z-10' : 'hidden' } onClick={scrollTop} onScroll={whenScroll}>Top</button>
+      <button className={showbtn ? 'fixed bottom-3 right-3 lg:right-40 lg:bottom-10 py-2 px-2 bg-[#13153d] text-white rounded-md z-10' : 'hidden' } onClick={scrollTop} onScroll={whenScroll}>Top</button>
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>

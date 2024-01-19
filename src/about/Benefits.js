@@ -1,6 +1,13 @@
 import React from 'react'
 import { benefitContents } from "../cards/Cards";
 
+//IMPORT IMAGES
+import logo1 from '../images/about/logo/Logo 1.png'
+import logo2 from '../images/about/logo/Logo 2.png'
+import logo3 from '../images/about/logo/Logo 3.png'
+import logo4 from '../images/about/logo/Logo 4.png'
+import logo5 from '../images/about/logo/Vector.png'
+
 const Benefits = () => {
 
     const contents = benefitContents.map(contents => {
@@ -21,17 +28,17 @@ const Benefits = () => {
             <div className='md:grid md:grid-cols-3 gap-10 mt-4'>
                 {contents}
             </div>
-            <div className='flex gap-4 mt-6'>
+            <div className='grid grid-cols-2 md:grid-cols-6 md:gap-20 items-baseline mt-16'>
 
                 <div>
                     <h2 className='font-medium text-2xl'>100.000+</h2>
                     <p>Finsweet Users</p>
                 </div>
-                <img src='' alt='' />
-                <img src='' alt='' />
-                <img src='' alt='' />
-                <img src='' alt='' />
-                <img src='' alt='' />
+                <img src={logo1} alt='' className='h-7' />
+                <img src={logo2} alt='' className='h-7' />
+                <img src={logo3} alt='' className='h-7' />
+                <img src={logo4} alt='' className='h-7' />
+                <img src={logo5} alt='' className='h-7' />
 
             </div>
         </div>
